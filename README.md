@@ -46,16 +46,17 @@ Before running the application, make sure you have the following installed:
    ```
 
 4. Create a file .env containing this text:
-    SECRETKEY=_your_secret_key_
+   
+    SECRET_KEY=_your_secret_key_
 
 
-5. Run the development server:
+6. Run the development server:
 
    ```bash
    python manage.py runserver
    ```
 
-6. Open your web browser and visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to access the QuestionWebApp.
+7. Open your web browser and visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to access the QuestionWebApp.
 
 ## Usage
 
