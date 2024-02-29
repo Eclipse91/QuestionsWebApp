@@ -1,5 +1,7 @@
 # QuestionWebApp in Django
 
+## Overview
+
 QuestionWebApp is a Django web application that allows users to test their knowledge of world geography by identifying countries and their capitals.
 
 ## Features
@@ -18,12 +20,10 @@ QuestionWebApp is a Django web application that allows users to test their knowl
   - Users can filter the countries based on continents using checkboxes.
   - This feature helps users focus on specific regions during the game.
 
-## Prerequisites
+## Requirements
 
-Before running the application, make sure you have the following installed:
-
-- [Python](https://www.python.org/)
-- [Django](https://www.djangoproject.com/)
+- Python 3.6 or higher
+- Required Python packages can be installed using `pip install -r requirements.txt`
 
 ## Getting Started
 
@@ -50,7 +50,7 @@ Before running the application, make sure you have the following installed:
     SECRET_KEY=_your_secret_key_
 
 
-6. Run the development server:
+5. Run the development server:
 
    ```bash
    python manage.py runserver
@@ -79,4 +79,7 @@ If you'd like to contribute to the development of QuestionWebApp, please follow 
 
 This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE](LICENSE) file for details.
 
-Feel free to customize the README to fit the specific details of your application.
+## Notes
+
+Feel free to contribute or report issues!
+This README provides a clearer structure, concise information, and instructions for setting up and running the QuestionsWebApp. Adjust the content as needed for your project.
