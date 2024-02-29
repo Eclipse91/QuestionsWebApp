@@ -1,7 +1,5 @@
 # QuestionWebApp in Django
 
-## Overview
-
 QuestionWebApp is a Django web application that allows users to test their knowledge of world geography by identifying countries and their capitals.
 
 ## Features
