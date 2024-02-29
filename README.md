@@ -54,7 +54,7 @@ QuestionWebApp is a Django web application that allows users to test their knowl
    python manage.py runserver
    ```
 
-7. Open your web browser and visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to access the QuestionWebApp.
+6. Open your web browser and visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to access the QuestionWebApp.
 
 ## Usage
 
