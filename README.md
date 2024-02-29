@@ -2,22 +2,6 @@
 
 QuestionWebApp is a Django web application that allows users to test their knowledge of world geography by identifying countries and their capitals.
 
-## Features
-
-- **Navigation Bar:**
-  - The application includes a navigation bar with two main links: Home and Geography.
-
-- **Home Page:**
-  - The Home page provides a brief introduction to the application and its purpose.
-
-- **Geography Game:**
-  - Clicking on the "Geography" button in the navigation bar leads users to the Geography game.
-  - The game randomly selects a country, and users have to input the correct capital for that country.
-
-- **Continent Filter:**
-  - Users can filter the countries based on continents using checkboxes.
-  - This feature helps users focus on specific regions during the game.
-
 ## Requirements
 
 - Python 3.6 or higher
