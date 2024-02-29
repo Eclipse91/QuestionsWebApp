@@ -58,10 +58,14 @@ QuestionWebApp is a Django web application that allows users to test their knowl
 
 ## Usage
 
-1. Navigate to the Home page to get an introduction to the application.
-2. Click on the "Geography" button to start the Geography game.
+1. Visit the Home page to gain an introduction to the application.
+2. Click on the "Geography" button to initiate the Geography game.
 3. Identify the capital of the displayed country.
-4. Use the continent checkboxes to filter countries based on continents.
+4. The cursor is always ready within the input bar for immediate typing.
+5. Press "Enter" after providing an answer to swiftly progress to the next question.
+6. In case of an incorrect response, a popup displays the correct solution.
+7. Press "Enter" again to seamlessly move on to the next question, with the cursor conveniently placed in the input bar.
+8. Utilize continent checkboxes to filter countries based on specific continents, customizing the game based on geographical preferences.
 
 ## License
 
