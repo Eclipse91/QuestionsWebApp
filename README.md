@@ -63,16 +63,6 @@ QuestionWebApp is a Django web application that allows users to test their knowl
 3. Identify the capital of the displayed country.
 4. Use the continent checkboxes to filter countries based on continents.
 
-## Contributing
-
-If you'd like to contribute to the development of QuestionWebApp, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature-name`).
-3. Make your changes and commit them (`git commit -m 'Add your feature'`).
-4. Push to the branch (`git push origin feature/your-feature-name`).
-5. Open a pull request.
-
 ## License
 
 This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE](LICENSE) file for details.
