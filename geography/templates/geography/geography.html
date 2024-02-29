@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% for s in states %}
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+      <h1 style="font-size: 44px;">Remove continents</h1>
+      <form method="post" action="{% url 'geography:filter' total questions%}">
+      {% csrf_token %}
+        {% for continent in continents %}
+        <label for="{{ continent.name|lower }}" style="font-size: 28px;">
+          <input class="custom-checkbox" type="checkbox" id="{{ continent.name|lower }}" name="{{ continent.name|lower }}" value="{{ continent.name }}" {% if continent.checked %}checked{% endif %}>
+          {{ continent.name }}
+        </label><br>
+        {% endfor %}
+        <div class="mt-3">
+          <button id="submitButton" class="btn btn-purple btn-lg" style="margin-bottom: 10%;">
+            Filter Content
+          </button>
+        </div>
+      </form>
+    </div>
+        
+    <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+      <form id="questionForm" action="{% url 'geography:answer' s.country total questions continents%}" method="post">
+        {% csrf_token %}
+        <div class="form-group" style="text-align:center; padding: 0%;">
+          <h1 style="font-size: 44px;">{{ s.country }}</h1>
+        </div>
+        <div class="form-group" style="text-align:center; font-size: 22px; padding: 2%;">
+          <input type="text" id="myChoice" name="myChoice" placeholder="Capital" autocomplete="off" autofocus onkeypress="handleKeyPress(event)">
+        </div>
+        <div class="form-group" style="text-align:center; padding: 2%;">
+          <input class="btn btn-purple btn-lg" type="submit" value="Confirm" onclick="showCorrectAnswer()">
+        </div>
+        <h1 style="text-align:center; font-size: 44px; padding-top: 10%;">Total</h1>
+        <h1 id="total" name="total" style="text-align:center; font-size: 44px;">{{total}}/{{questions}}</h1>
+      </form>
+    </div>
+
+    <div class="col-lg-4 col-md-0 col-sm-0">
+    </div>
+  </div>
+    <h1 hidden id="correctAnswer">{{ s.capital }}</h1>
+
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+    </div>
+    
+    <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+      <div class="mt-3">
+        <form method="post" action="{% url 'geography:reset' s.country continents %}">
+          {% csrf_token %}
+          <button type="submit" class="btn btn-purple btn-lg" style="margin-bottom: 10%;">
+              Reset Points
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-0 col-sm-0">
+    </div>
+  </div>
+  {% endfor %}
+
+  <script>
+    // Avoid the exclusion of all the continents at once
+    document.addEventListener('DOMContentLoaded', function () {
+      var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+      checkboxes.forEach(function (checkbox) {
+        checkbox.addEventListener('change', function () {
+          if (document.querySelectorAll('input[type="checkbox"]:checked').length === 6) {
+            alert('At least one checkbox must be checked.');
+            this.checked = false; // Prevent unchecking the last checkbox
+          }
+        });
+      });
+    });
+    
+    // // Function to handle Enter key press inside the input field
+    // window.handleKeyPress = function(event) {
+    //   if (event.key === 'Enter') {
+    //       // Call your function here, e.g., showCorrectAnswer()
+    //       showCorrectAnswer();
+    //   }
+    // };
+    function handleKeyPress(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        showCorrectAnswer();
+        simulateFormSubmit()
+    }
+  }
+  </script>
+{% endblock %}
