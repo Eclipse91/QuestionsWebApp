@@ -77,6 +77,6 @@ If you'd like to contribute to the development of QuestionWebApp, please follow 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE](LICENSE) file for details.
 
 Feel free to customize the README to fit the specific details of your application.
