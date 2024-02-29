@@ -8,6 +8,9 @@ import json
 
 
 def index(request):
+    '''
+    Render the Home page with an introduction to the application and initiate the Geography game.
+    '''
     # import pdb; pdb.set_trace()
     n_states = len(Country.objects.all())
     template = loader.get_template("geography/geography.html")
@@ -31,6 +34,9 @@ def index(request):
     return HttpResponse(template.render(context, request))
 
 def answer(request, country, total, questions, continents):
+    '''
+    Handle the user's answer submission, check correctness, and generate a new question.
+    '''
     # import pdb; pdb.set_trace()
     my_choice = request.POST.get('myChoice')
 
@@ -44,7 +50,7 @@ def answer(request, country, total, questions, continents):
         valid_json_string = continents.replace("'", "\"").replace("True", "true").replace("False", "false")
         continents = json.loads(valid_json_string)
 
-        # Create the query to obtain a country
+        # Create the query to obtain a new country
         filtered_continents = [continent['name'] for continent in continents if continent['checked'] is not False]
         q_objects = Q()
         for continent in filtered_continents:
@@ -65,6 +71,9 @@ def answer(request, country, total, questions, continents):
         return HttpResponse(template.render(context, request))
 
 def reset(request, country, continents):
+    '''
+    Reset the statistics.
+    '''
     # import pdb; pdb.set_trace()
     valid_json_string = continents.replace("'", "\"").replace("True", "true").replace("False", "false")
     continents = json.loads(valid_json_string)
@@ -84,6 +93,9 @@ def reset(request, country, continents):
     return HttpResponse(template.render(context, request))
 
 def filter(request, total, questions):
+    '''
+    Handle continent filtering, generate a new question, and keep the statistics.
+    '''
     # import pdb; pdb.set_trace()
     continents = [
                 request.POST.get('asia'), 
@@ -102,7 +114,7 @@ def filter(request, total, questions):
                     {'name': 'Oceania', 'checked': True if continents[5] != None else False},
                     ]
 
-    # Create the query to obtain a country
+    # Create the query to obtain a new country
     filtered_continents = [continent for continent in continents if continent is not None]
     q_objects = Q()
     for continent in filtered_continents:
