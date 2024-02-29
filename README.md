@@ -1,6 +1,6 @@
-# QuestionWebApp in Django
+# QuestionsWebApp in Django
 
-QuestionWebApp is a Django web application that allows users to test their knowledge of world geography by identifying countries and their capitals.
+QuestionsWebApp is a Django web application that allows users to test their knowledge of world geography by identifying countries and their capitals.
 
 ## Features
 
@@ -30,13 +30,13 @@ Before running the application, make sure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Eclipse91/QuestionWebApp.git
+   git clone https://github.com/Eclipse91/QuestionsWebApp.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd QuestionWebApp
+   cd QuestionsWebApp
    ```
 
 3. Install the dependencies:
@@ -57,7 +57,7 @@ Before running the application, make sure you have the following installed:
    python manage.py runserver
    ```
 
-6. Open your web browser and visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to access the QuestionWebApp.
+6. Open your web browser and visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to access the QuestionsWebApp.
 
 ## Usage
 
@@ -68,7 +68,7 @@ Before running the application, make sure you have the following installed:
 
 ## Contributing
 
-If you'd like to contribute to the development of QuestionWebApp, please follow these steps:
+If you'd like to contribute to the development of QuestionsWebApp, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature/your-feature-name`).
