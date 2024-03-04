@@ -7,6 +7,5 @@ function showCorrectAnswer() {
 }
 
 function simulateFormSubmit() {
-    debugger;
     document.getElementById('questionForm').submit();
 }
