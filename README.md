@@ -51,6 +51,86 @@ QuestionsWebApp is a Django web application that allows users to test their know
 7. Press "Enter" again to seamlessly move on to the next question, with the cursor conveniently placed in the input bar.
 8. Utilize continent checkboxes to filter countries based on specific continents, customizing the game based on geographical preferences.
 
+## Structure
+├── db.sqlite3
+├── geography
+│   ├── admin.py
+│   ├── apps.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   ├── 0002_alter_country_capital_alter_country_country.py
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   │       ├── 0001_initial.cpython-310.pyc
+│   │       ├── 0002_alter_country_capital_alter_country_country.cpython-310.pyc
+│   │       └── __init__.cpython-310.pyc
+│   ├── models.py
+│   ├── __pycache__
+│   │   ├── admin.cpython-310.pyc
+│   │   ├── apps.cpython-310.pyc
+│   │   ├── forms.cpython-310.pyc
+│   │   ├── __init__.cpython-310.pyc
+│   │   ├── models.cpython-310.pyc
+│   │   ├── urls.cpython-310.pyc
+│   │   └── views.cpython-310.pyc
+│   ├── templates
+│   │   └── geography
+│   │       └── geography.html
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── LICENSE
+├── manage.py
+├── QuestionsWebApp
+│   ├── asgi.py
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-310.pyc
+│   │   ├── settings.cpython-310.pyc
+│   │   ├── urls.cpython-310.pyc
+│   │   └── wsgi.cpython-310.pyc
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── README.md
+├── requirements.txt
+├── shared
+│   ├── admin.py
+│   ├── apps.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   │       └── __init__.cpython-310.pyc
+│   ├── models.py
+│   ├── __pycache__
+│   │   ├── admin.cpython-310.pyc
+│   │   ├── apps.cpython-310.pyc
+│   │   ├── __init__.cpython-310.pyc
+│   │   ├── models.cpython-310.pyc
+│   │   ├── urls.cpython-310.pyc
+│   │   └── views.cpython-310.pyc
+│   ├── templates
+│   │   └── shared
+│   │       └── home.html
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── static
+│   ├── images
+│   │   ├── django_logo.png
+│   │   ├── favicon.ico
+│   │   ├── QWA-192x192.png
+│   │   └── QWA.png
+│   ├── js
+│   │   └── script.js
+│   └── styles
+│       └── styles.css
+└── templates
+    ├── base.html
+    └── navbar.html
+
 ## License
 
 This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE](LICENSE) file for details.
