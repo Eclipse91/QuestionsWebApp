@@ -53,8 +53,6 @@ QuestionsWebApp is a Django web application that allows users to test their know
 
 ## Structure
    ```
-├── db.sqlite3
-├── folder_map.txt
 ├── geography
 │   ├── admin.py
 │   ├── apps.py
@@ -82,8 +80,6 @@ QuestionsWebApp is a Django web application that allows users to test their know
 │   ├── tests.py
 │   ├── urls.py
 │   └── views.py
-├── LICENSE
-├── manage.py
 ├── QuestionsWebApp
 │   ├── asgi.py
 │   ├── __init__.py
@@ -95,8 +91,6 @@ QuestionsWebApp is a Django web application that allows users to test their know
 │   ├── settings.py
 │   ├── urls.py
 │   └── wsgi.py
-├── README.md
-├── requirements.txt
 ├── shared
 │   ├── admin.py
 │   ├── apps.py
@@ -129,9 +123,14 @@ QuestionsWebApp is a Django web application that allows users to test their know
 │   │   └── script.js
 │   └── styles
 │       └── styles.css
-└── templates
-    ├── base.html
-    └── navbar.html
+├── templates
+│   ├── base.html
+│   └── navbar.html
+├── db.sqlite3
+├── LICENSE
+├── manage.py
+├── README.md
+└── requirements.txt
    ```
 
 ## License
