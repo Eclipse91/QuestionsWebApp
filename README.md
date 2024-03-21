@@ -54,62 +54,30 @@ QuestionsWebApp is a Django web application that allows users to test their know
 ## Structure
    ```
 ├── geography
-│   ├── admin.py
-│   ├── apps.py
-│   ├── __init__.py
-│   ├── migrations
-│   │   ├── 0001_initial.py
-│   │   ├── 0002_alter_country_capital_alter_country_country.py
-│   │   ├── __init__.py
-│   │   └── __pycache__
-│   │       ├── 0001_initial.cpython-310.pyc
-│   │       ├── 0002_alter_country_capital_alter_country_country.cpython-310.pyc
-│   │       └── __init__.cpython-310.pyc
-│   ├── models.py
-│   ├── __pycache__
-│   │   ├── admin.cpython-310.pyc
-│   │   ├── apps.cpython-310.pyc
-│   │   ├── forms.cpython-310.pyc
-│   │   ├── __init__.cpython-310.pyc
-│   │   ├── models.cpython-310.pyc
-│   │   ├── urls.cpython-310.pyc
-│   │   └── views.cpython-310.pyc
 │   ├── templates
 │   │   └── geography
 │   │       └── geography.html
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
 │   ├── tests.py
 │   ├── urls.py
 │   └── views.py
 ├── QuestionsWebApp
-│   ├── asgi.py
 │   ├── __init__.py
-│   ├── __pycache__
-│   │   ├── __init__.cpython-310.pyc
-│   │   ├── settings.cpython-310.pyc
-│   │   ├── urls.cpython-310.pyc
-│   │   └── wsgi.cpython-310.pyc
+│   ├── asgi.py
 │   ├── settings.py
 │   ├── urls.py
 │   └── wsgi.py
 ├── shared
-│   ├── admin.py
-│   ├── apps.py
-│   ├── __init__.py
-│   ├── migrations
-│   │   ├── __init__.py
-│   │   └── __pycache__
-│   │       └── __init__.cpython-310.pyc
-│   ├── models.py
-│   ├── __pycache__
-│   │   ├── admin.cpython-310.pyc
-│   │   ├── apps.cpython-310.pyc
-│   │   ├── __init__.cpython-310.pyc
-│   │   ├── models.cpython-310.pyc
-│   │   ├── urls.cpython-310.pyc
-│   │   └── views.cpython-310.pyc
 │   ├── templates
 │   │   └── shared
 │   │       └── home.html
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
 │   ├── tests.py
 │   ├── urls.py
 │   └── views.py
@@ -126,10 +94,10 @@ QuestionsWebApp is a Django web application that allows users to test their know
 ├── templates
 │   ├── base.html
 │   └── navbar.html
-├── db.sqlite3
 ├── LICENSE
-├── manage.py
 ├── README.md
+├── db.sqlite3
+├── manage.py
 └── requirements.txt
    ```
 
