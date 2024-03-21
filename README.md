@@ -52,7 +52,9 @@ QuestionsWebApp is a Django web application that allows users to test their know
 8. Utilize continent checkboxes to filter countries based on specific continents, customizing the game based on geographical preferences.
 
 ## Structure
+.
 ├── db.sqlite3
+├── folder_map.txt
 ├── geography
 │   ├── admin.py
 │   ├── apps.py
