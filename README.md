@@ -53,6 +53,12 @@ QuestionsWebApp is a Django web application that allows users to test their know
 
 ## Structure
    ```
+├── QuestionsWebApp
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
 ├── geography
 │   ├── templates
 │   │   └── geography
@@ -64,12 +70,6 @@ QuestionsWebApp is a Django web application that allows users to test their know
 │   ├── tests.py
 │   ├── urls.py
 │   └── views.py
-├── QuestionsWebApp
-│   ├── __init__.py
-│   ├── asgi.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
 ├── shared
 │   ├── templates
 │   │   └── shared
