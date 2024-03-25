@@ -5,9 +5,7 @@ QuestionsWebApp is a Django web application that allows users to test their know
 ## Requirements
 
 - Python 3.6 or higher
-- Required Python packages can be installed using `pip install -r requirements.txt`
-
-## Getting Started
+- Required Python packages are listed in the requirements.txt file
 
 1. Clone the repository:
 
