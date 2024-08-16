@@ -29,19 +29,29 @@ QuestionsWebApp is a Django web application that allows users to test their know
    
     SECRET_KEY=_your_secret_key_
 
-5. Load Fixtures:
+5. 
+   ```bash
+   python manage.py makemigrations geography
+   ```
+
+6. 
+   ```bash
+   python manage.py migrate
+   ```
+
+7. Load Fixtures:
 
    ```bash
    python manage.py loaddata geography
    ```
 
-6. Run the development server:
+8. Run the development server:
 
    ```bash
    python manage.py runserver
    ```
 
-7. Open your web browser and visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to access the QuestionsWebApp.
+9. Open your web browser and visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to access the QuestionsWebApp.
 
 ## Usage
 
