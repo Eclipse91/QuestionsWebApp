@@ -29,12 +29,14 @@ QuestionsWebApp is a Django web application that allows users to test their know
    
     SECRET_KEY=_your_secret_key_
 
-5. 
+5. Create Migrations for the geography App:
+
    ```bash
    python manage.py makemigrations geography
    ```
 
-6. 
+6. Apply Migrations to the Database:
+
    ```bash
    python manage.py migrate
    ```
