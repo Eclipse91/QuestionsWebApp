@@ -1,0 +1,106 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.sqlite3-journal
+db.sqlite3
+
+# Local environment settings
+.env
+.env.local
+.env.*.local
+*.env
+*.local
+*.envrc
+
+# Django specific:
+media/
+staticfiles/
+
+# Migrations
+*/migrations/__pycache__/
+*/migrations/*.py[cod]
+*/migrations/*
+
+# If you're using Celery
+celerybeat-schedule
+celerybeat.pid
+
+# If you're using coverage.py to generate coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# If you're using MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# If you're using Pytest
+.pytest_cache/
+.cache
+
+# If you're using C extensions, you can also ignore C extension build artifacts
+*.so
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.orig
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+.metadata/
+*.iml
+*.ipr
+*.iws
+atlassian-ide-plugin.xml
+.vscode/
+.vim/
+nbproject/
+
+# Python virtual environment
+venv/
+ENV/
+env/
+env.bak/
+.venv/
+.Python
+
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux Files
+*.pid
+*.seed
+*.pid.lock
+*~
+
+# pipenv
+Pipfile.lock
+
+# Others
+*.log
+*.pot

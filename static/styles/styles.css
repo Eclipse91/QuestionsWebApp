@@ -1,0 +1,33 @@
+/* Navbar */
+.logo-img {
+    max-height: 70px; /* Adjust the max-height value as needed */
+}
+
+/* Base */
+.custom-background {
+    background-color: #ffcc00; /* Replace with your desired color */
+}
+
+/* Home */
+#animatedText {
+    display: inline-block; /* Make the text an inline block to respect container width */
+    font-size: 44px; /* Adjust the font size as needed */
+}
+
+/* Shared */
+#container {
+    max-width: 100%; /* Limit the maximum width to the width of the viewport */
+    overflow: hidden; /* Hide any content that overflows the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 1%; /* Add padding to the container for better aesthetics */
+}
+
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-purple {
+    background-color: #800080 !important; /* Dark Purple Color */
+    color: #fff !important; /* Text color */
+}

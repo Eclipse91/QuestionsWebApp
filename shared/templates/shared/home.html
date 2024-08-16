@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div id="container">
+    <span id="animatedText"></span>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var targetText = "QuestionsWebApp is a dynamic and engaging Django web application designed to enhance users' knowledge of world geography. Through an interactive and educational game, users can test their ability to identify countries and their corresponding capitals."; // Change this to your desired text
+        var animatedTextElement = document.getElementById('animatedText');
+    
+        // Call the function to start the text animation
+        animateText();
+    
+        // Function to animate the text
+        function animateText() {
+        var index = 0;
+        var intervalId = setInterval(function() {
+            // Get the current substring of the target text
+            var currentSubstring = targetText.slice(0, index + 1);
+    
+            // Update the content of the animated text element
+            animatedTextElement.textContent = currentSubstring;
+    
+            // Move the cursor (border-right) to simulate typing
+            animatedTextElement.style.borderRight = '2px solid transparent';
+    
+            index++;
+    
+            // Check if the animation is complete
+            if (index > targetText.length) {
+            clearInterval(intervalId);
+            }
+        }, 10); // Adjust the interval duration (in milliseconds) as needed
+        }
+    });
+</script>
+{% endblock %}
