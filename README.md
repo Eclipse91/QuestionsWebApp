@@ -41,7 +41,7 @@ QuestionsWebApp is a Django web application that allows users to test their know
    python manage.py migrate
    ```
 
-7. Load Fixtures:
+7. Load Fixtures: Please load the JSON data in the language of your choice. If the data for that language does not exist, create it yourself using the English version as a model. For example, use geography_ita for Italian.
 
    ```bash
    python manage.py loaddata geography
